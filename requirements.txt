@@ -16,4 +16,6 @@ inputimeout==1.0.4
 newspaper3k==0.2.8
 beautifulsoup4==4.12.3
 lxml_html_clean==0.2.0
+gradio_client==1.2.0
+pygame==2.6.0
 
