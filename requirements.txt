@@ -18,4 +18,6 @@ beautifulsoup4==4.12.3
 lxml_html_clean==0.2.0
 gradio_client==1.2.0
 pygame==2.6.0
+numpy==2.0.1
+pynput==1.7.7
 
