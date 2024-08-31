@@ -20,4 +20,7 @@ gradio_client==1.2.0
 pygame==2.6.0
 numpy==2.0.1
 pynput==1.7.7
-
+pypdf==4.3.1
+Flask[async]==3.0.3
+Flask-BasicAuth==0.2.0
+faiss-cpu==1.8.0.post1
