@@ -12,7 +12,6 @@ services:
         user_name: agent-zero
     ports:
       - "50022:22"
-      - '${APP_PORT:-5001}:5001'
     volumes:
       - ./../:/home/agent-zero/
 
