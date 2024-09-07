@@ -23,4 +23,6 @@ echo "cd /home/agent-zero/work_dir" >> /home/agent-zero/.bashrc
 apt-get update
 
 # Start SSH service
+source /opt/venv/bin/activate
 exec /usr/sbin/sshd -D
+

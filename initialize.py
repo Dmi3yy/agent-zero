@@ -4,8 +4,8 @@ from agent import AgentConfig
 def initialize():
     
     # main chat model used by agents (smarter, more accurate)
-    # chat_llm = models.get_openai_chat(model_name="gpt-4o-mini", temperature=0)
-    chat_llm = models.get_ollama_chat(model_name="llama3.1:latest", temperature=0)
+    chat_llm = models.get_openai_chat(model_name="chatgpt-4o-latest", temperature=0)
+    # chat_llm = models.get_ollama_chat(model_name="llama3.1:latest", temperature=0)
     # chat_llm = models.get_lmstudio_chat(model_name="TheBloke/Mistral-7B-Instruct-v0.2-GGUF", temperature=0)
     # chat_llm = models.get_openrouter(model_name="meta-llama/llama-3-8b-instruct:free")
     # chat_llm = models.get_azure_openai_chat(deployment_name="gpt-4o-mini", temperature=0)
@@ -17,8 +17,8 @@ def initialize():
     utility_llm = chat_llm # change if you want to use a different utility model
 
     # embedding model used for memory
-    # embedding_llm = models.get_openai_embedding(model_name="text-embedding-3-small")
-    embedding_llm = models.get_ollama_embedding(model_name="nomic-embed-text")
+    embedding_llm = models.get_openai_embedding(model_name="text-embedding-3-small")
+    # embedding_llm = models.get_ollama_embedding(model_name="nomic-embed-text")
     # embedding_llm = models.get_huggingface_embedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
     # agent configuration

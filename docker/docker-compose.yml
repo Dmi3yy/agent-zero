@@ -11,9 +11,10 @@ services:
       args:
         user_name: agent-zero
     ports:
+      - "50173:5173"
+      - "50174:5174"
       - "50022:22"
     volumes:
       - ./../:/home/agent-zero/
 
 #    entrypoint: ["/bin/bash", "-c", "/home/agent-zero/docker/initialize.sh"]
-    command: ["tail", "-f", "/dev/null"]
