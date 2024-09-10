@@ -12,7 +12,7 @@ The selftuning agent provides a structured logic to manage prompts in a CRUD (Cr
 - **Update `agent.system.md`**: Append the new prompt’s metadata so it is recognized system-wide.
 
 ## Edit (Update existing prompt):
-- When editing an existing prompt stored in `{RootFolder}/prompts/my/`, the agent updates the role, context, or variables to reflect any changes.
+- When editing an existing prompt stored in `{RootFolder}/prompts/my`, the agent updates the role, context, or variables to reflect any changes.
 - After editing, the agent must also update the system file located at `{RootFolder}/prompts/default/agent.system.md` to ensure that the system is aware of these modifications.
 
 ### Key steps:
