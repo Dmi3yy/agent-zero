@@ -149,29 +149,7 @@ class Agent:
 
                 try:
 
-                    #system = self.read_prompt("agent.system.md", agent_name=self.agent_name) + "\n\n" + self.read_prompt("agent.tools.md")
-                    custom_folder = "my"
-                    default_folder = "default"
-
-                    # Function to read prompts with fallback
-                    def read_prompt_with_fallback(file_name, agent_name=None):
-                        try:
-                            # First try to read from the 'my' folder
-                            return self.read_prompt(f"/../{custom_folder}/{file_name}", agent_name=agent_name)
-                        except FileNotFoundError:
-                            # If not found, read from the 'default' folder
-                            return self.read_prompt(f"/../{default_folder}/{file_name}", agent_name=agent_name)
-
-                    # Read 'agent.system.md' with fallback
-                    system = read_prompt_with_fallback("agent.system.md", agent_name=self.agent_name)
-
-                    # Read 'agent.tools.md' with fallback
-                    tools = read_prompt_with_fallback("agent.tools.md")
-
-                    # Combine system and tools content
-                    system += "\n\n" + tools
-
-
+                    system = self.read_prompt("agent.system.md", agent_name=self.agent_name) + "\n\n" + self.read_prompt("agent.tools.md")
                     memories = await self.fetch_memories()
                     if memories: system+= "\n\n"+memories
 
